@@ -13,6 +13,10 @@ if __name__ == '__main__':
         print("2. Adicionar categoria")
         print("3. Modificar categoria")
         print("4. Remover categoria")
+        print("5. Lisar produtos")
+        print("6. Adicionar produto")
+        print("7. Remover produto")
+        print("8. Modificar produto")
 
         print("0. Finalizar")
 
@@ -26,6 +30,15 @@ if __name__ == '__main__':
                 app_categorias.modificar(engine)
             case "4":
                 app_categorias.remover(engine)
+
+            case "5":
+                app_categorias.listar(engine)
+            case "6":
+                app_categorias.adicionar(engine)
+            case "7":
+                app_categorias.remover(engine)
+            case "8":
+                app_categorias.modificar(engine)
 
             case "0":
                 exit()
